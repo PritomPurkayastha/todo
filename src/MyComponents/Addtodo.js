@@ -4,7 +4,7 @@ export const Addtodo = (props) => {
     const[desc, setDesc]=useState("");
 
     const submit=(e)=>{
-        // e.preventDefault();
+        e.preventDefault();
         if(!title || !desc){
             alert("Title and Description can not be empty");
         }
